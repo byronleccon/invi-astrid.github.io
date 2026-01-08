@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Invitación de Cumpleaños</title>
+
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; }
+
+.portada {
+    height: 100vh;
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada button {
+    background: rgba(233, 30, 99, 0.9);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.info {
+    min-height: 100vh;
+    background-image: url('rosa.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invitacion {
+    background: rgba(255,255,255,0.93);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+h1 { color: #e91e63; }
+
+.ubicacion {
+    display: inline-block;
+    border: 3px solid #e91e63;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #e91e63;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.confirmar {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#mensaje {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+<section class="portada">
+    <button onclick="location.href='#info'">Ver invitación ⬇️</button>
+</section>
+
+<section id="info" class="info">
+    <div class="invitacion">
+        <h1>🎉 ¡Estás invitado! 🎉</h1>
+        <h2>Astrid</h2>
+        <p>20 años · 28 de enero</p>
+
+        <a class="ubicacion" href="https://maps.app.goo.gl/WUM6f1ZZCZSGb5TeA" target="_blank">
+            Ver ubicación
+        </a><br><br>
+
+        <button class="confirmar" onclick="confirmar()">Confirmar asistencia</button>
+        <div id="mensaje"></div>
+    </div>
+</section>
+
+<script>
+function confirmar() {
+    document.getElementById("mensaje").innerText =
+        "¡Gracias por confirmar! 🎉";
+}
+</script>
+</body>
+</html>
