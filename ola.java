@@ -164,22 +164,22 @@ button.confirmar:hover {
 
 <!-- PORTADA -->
 <section class="portada">
-    <button onclick="location.href='#info'">Ver invitación ⬇️</button>
+    <button onclick="location.href='#info'">Ver invitación</button>
 </section>
 
 <!-- INFORMACIÓN -->
 <section id="info" class="info">
     <div class="invitacion">
-        <h1>🎉 ¡Estás invitado! 🎉</h1>
+        <h1>¡¡¡Estás invitado!!!</h1>
 
         <p>Ven a celebrar el cumpleaños de</p>
         <h2>Astrid</h2>
 
         <p><strong>20 años</strong></p>
-        <p>📅 28 de enero</p>
+        <p>El dia 28 de enero</p>
 
         <p>
-            📍<br>
+            <br>
             <a class="ubicacion"
                href="https://maps.app.goo.gl/WUM6f1ZZCZSGb5TeA"
                target="_blank">
@@ -195,7 +195,7 @@ button.confirmar:hover {
 <script>
 function confirmar() {
     document.getElementById("mensaje").innerText =
-        "¡Gracias por confirmar! 🎉 ¡Te esperamos!";
+        "¡Gracias por confirmar! ¡Te esperamos!";
 }
 </script>
 
